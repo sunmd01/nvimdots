@@ -1,25 +1,25 @@
 local lang = {}
 local conf = require("modules.lang.config")
 
-lang['fatih/vim-go'] = {
+lang["https://github.com.cnpmjs.org/fatih/vim-go"] = {
     opt = true,
-    ft = 'go',
-    run = ':GoInstallBinaries',
+    ft = "go",
+    run = ":GoInstallBinaries",
     config = conf.lang_go
 }
-lang["rust-lang/rust.vim"] = {opt = true, ft = "rust"}
-lang["simrat39/rust-tools.nvim"] = {
+lang["https://github.com.cnpmjs.org/rust-lang/rust.vim"] = {opt = true, ft = "rust"}
+lang["https://github.com.cnpmjs.org/simrat39/rust-tools.nvim"] = {
     opt = true,
     ft = "rust",
     config = conf.rust_tools,
     requires = {{"nvim-lua/plenary.nvim", opt = false}}
 }
-lang["kristijanhusak/orgmode.nvim"] = {
+lang["https://github.com.cnpmjs.org/kristijanhusak/orgmode.nvim"] = {
     opt = true,
     ft = "org",
     config = conf.lang_org
 }
-lang["iamcco/markdown-preview.nvim"] = {
+lang["https://github.com.cnpmjs.org/iamcco/markdown-preview.nvim"] = {
     opt = true,
     ft = "markdown",
     run = "cd app && yarn install"

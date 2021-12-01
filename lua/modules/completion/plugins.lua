@@ -1,23 +1,23 @@
 local completion = {}
 local conf = require("modules.completion.config")
 
-completion["neovim/nvim-lspconfig"] = {
+completion["https://github.com.cnpmjs.org/neovim/nvim-lspconfig"] = {
     opt = true,
     event = "BufReadPre",
     config = conf.nvim_lsp
 }
-completion["williamboman/nvim-lsp-installer"] = {
+completion["https://github.com.cnpmjs.org/williamboman/nvim-lsp-installer"] = {
     opt = true,
     after = "nvim-lspconfig"
 }
-completion["tami5/lspsaga.nvim"] = {opt = true, after = "nvim-lspconfig"}
-completion["kosayoda/nvim-lightbulb"] = {
+completion["https://github.com.cnpmjs.org/tami5/lspsaga.nvim"] = {opt = true, after = "nvim-lspconfig"}
+completion["https://github.com.cnpmjs.org/kosayoda/nvim-lightbulb"] = {
     opt = true,
     after = "nvim-lspconfig",
     config = conf.lightbulb
 }
-completion["ray-x/lsp_signature.nvim"] = {opt = true, after = "nvim-lspconfig"}
-completion["hrsh7th/nvim-cmp"] = {
+completion["https://github.com.cnpmjs.org/ray-x/lsp_signature.nvim"] = {opt = true, after = "nvim-lspconfig"}
+completion["https://github.com.cnpmjs.org/hrsh7th/nvim-cmp"] = {
     config = conf.cmp,
     event = "InsertEnter",
     requires = {
@@ -36,15 +36,15 @@ completion["hrsh7th/nvim-cmp"] = {
         -- }
     }
 }
-completion["L3MON4D3/LuaSnip"] = {
+completion["https://github.com.cnpmjs.org/L3MON4D3/LuaSnip"] = {
     after = "nvim-cmp",
     config = conf.luasnip,
     requires = "rafamadriz/friendly-snippets"
 }
-completion["windwp/nvim-autopairs"] = {
+completion["https://github.com.cnpmjs.org/windwp/nvim-autopairs"] = {
     after = "nvim-cmp",
     config = conf.autopairs
 }
-completion["github/copilot.vim"] = {opt = true, cmd = "Copilot"}
+completion["https://github.com.cnpmjs.org/github/copilot.vim"] = {opt = true, cmd = "Copilot"}
 
 return completion

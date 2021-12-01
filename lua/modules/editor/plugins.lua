@@ -1,13 +1,13 @@
 local editor = {}
 local conf = require("modules.editor.config")
 
-editor["junegunn/vim-easy-align"] = {opt = true, cmd = "EasyAlign"}
-editor["itchyny/vim-cursorword"] = {
+editor["https://github.com.cnpmjs.org/junegunn/vim-easy-align"] = {opt = true, cmd = "EasyAlign"}
+editor["https://github.com.cnpmjs.org/itchyny/vim-cursorword"] = {
     opt = true,
     event = {"BufReadPre", "BufNewFile"},
     config = conf.vim_cursorwod
 }
-editor["terrortylor/nvim-comment"] = {
+editor["https://github.com.cnpmjs.org/terrortylor/nvim-comment"] = {
     opt = false,
     config = function()
         require("nvim_comment").setup({
@@ -17,65 +17,65 @@ editor["terrortylor/nvim-comment"] = {
         })
     end
 }
-editor["simrat39/symbols-outline.nvim"] = {
+editor["https://github.com.cnpmjs.org/simrat39/symbols-outline.nvim"] = {
     opt = true,
     cmd = {"SymbolsOutline", "SymbolsOutlineOpen"},
     config = conf.symbols_outline
 }
-editor["nvim-treesitter/nvim-treesitter"] = {
+editor["https://github.com.cnpmjs.org/nvim-treesitter/nvim-treesitter"] = {
     opt = true,
     run = ":TSUpdate",
     event = "BufRead",
     config = conf.nvim_treesitter
 }
-editor["nvim-treesitter/nvim-treesitter-textobjects"] = {
+editor["https://github.com.cnpmjs.org/nvim-treesitter/nvim-treesitter-textobjects"] = {
     opt = true,
     after = "nvim-treesitter"
 }
-editor["romgrk/nvim-treesitter-context"] = {
+editor["https://github.com.cnpmjs.org/romgrk/nvim-treesitter-context"] = {
     opt = true,
     after = "nvim-treesitter"
 }
-editor["p00f/nvim-ts-rainbow"] = {
+editor["https://github.com.cnpmjs.org/p00f/nvim-ts-rainbow"] = {
     opt = true,
     after = "nvim-treesitter",
     event = "BufRead"
 }
-editor["JoosepAlviste/nvim-ts-context-commentstring"] = {
+editor["https://github.com.cnpmjs.org/JoosepAlviste/nvim-ts-context-commentstring"] = {
     opt = true,
     after = "nvim-treesitter"
 }
-editor["mfussenegger/nvim-ts-hint-textobject"] = {
+editor["https://github.com.cnpmjs.org/mfussenegger/nvim-ts-hint-textobject"] = {
     opt = true,
     after = "nvim-treesitter"
 }
-editor["SmiteshP/nvim-gps"] = {
+editor["https://github.com.cnpmjs.org/SmiteshP/nvim-gps"] = {
     opt = true,
     after = "nvim-treesitter",
     config = conf.nvim_gps
 }
-editor["lukas-reineke/format.nvim"] = {
+editor["https://github.com.cnpmjs.org/lukas-reineke/format.nvim"] = {
     opt = true,
     cmd = {"Format", "FormatWrite"},
     config = conf.format
 }
-editor["windwp/nvim-ts-autotag"] = {
+editor["https://github.com.cnpmjs.org/windwp/nvim-ts-autotag"] = {
     opt = true,
     ft = {"html", "xml"},
     config = conf.autotag
 }
-editor["andymass/vim-matchup"] = {
+editor["https://github.com.cnpmjs.org/andymass/vim-matchup"] = {
     opt = true,
     after = "nvim-treesitter",
     config = conf.matchup
 }
-editor["rhysd/accelerated-jk"] = {opt = true}
-editor["hrsh7th/vim-eft"] = {opt = true}
-editor["romainl/vim-cool"] = {
+editor["https://github.com.cnpmjs.org/rhysd/accelerated-jk"] = {opt = true}
+editor["https://github.com.cnpmjs.org/hrsh7th/vim-eft"] = {opt = true}
+editor["https://github.com.cnpmjs.org/romainl/vim-cool"] = {
     opt = true,
     event = {"CursorMoved", "InsertEnter"}
 }
-editor["phaazon/hop.nvim"] = {
+editor["https://github.com.cnpmjs.org/phaazon/hop.nvim"] = {
     opt = true,
     branch = "v1",
     cmd = {
@@ -86,30 +86,30 @@ editor["phaazon/hop.nvim"] = {
         require("hop").setup {keys = "etovxqpdygfblzhckisuran"}
     end
 }
-editor["karb94/neoscroll.nvim"] = {
+editor["https://github.com.cnpmjs.org/karb94/neoscroll.nvim"] = {
     opt = true,
     event = "WinScrolled",
     config = conf.neoscroll
 }
-editor["vimlab/split-term.vim"] = {opt = true, cmd = {"Term", "VTerm"}}
-editor["akinsho/nvim-toggleterm.lua"] = {
+editor["https://github.com.cnpmjs.org/vimlab/split-term.vim"] = {opt = true, cmd = {"Term", "VTerm"}}
+editor["https://github.com.cnpmjs.org/akinsho/nvim-toggleterm.lua"] = {
     opt = true,
     event = "BufRead",
     config = conf.toggleterm
 }
-editor["numtostr/FTerm.nvim"] = {opt = true, event = "BufRead"}
-editor["norcalli/nvim-colorizer.lua"] = {
+editor["https://github.com.cnpmjs.org/numtostr/FTerm.nvim"] = {opt = true, event = "BufRead"}
+editor["https://github.com.cnpmjs.org/norcalli/nvim-colorizer.lua"] = {
     opt = true,
     event = "BufRead",
     config = conf.nvim_colorizer
 }
-editor["rmagatti/auto-session"] = {
+editor["https://github.com.cnpmjs.org/rmagatti/auto-session"] = {
     opt = true,
     cmd = {"SaveSession", "RestoreSession", "DeleteSession"},
     config = conf.auto_session
 }
-editor["jdhao/better-escape.vim"] = {opt = true, event = "InsertEnter"}
-editor["rcarriga/nvim-dap-ui"] = {
+editor["https://github.com.cnpmjs.org/jdhao/better-escape.vim"] = {opt = true, event = "InsertEnter"}
+editor["https://github.com.cnpmjs.org/rcarriga/nvim-dap-ui"] = {
     opt = false,
     config = conf.dapui,
     requires = {
@@ -121,8 +121,8 @@ editor["rcarriga/nvim-dap-ui"] = {
         }
     }
 }
-editor["tpope/vim-fugitive"] = {opt = true, cmd = {"Git", "G"}}
-editor["chentau/marks.nvim"] = {
+editor["https://github.com.cnpmjs.org/tpope/vim-fugitive"] = {opt = true, cmd = {"Git", "G"}}
+editor["https://github.com.cnpmjs.org/chentau/marks.nvim"] = {
     opt = true,
     event = "BufReadPost",
     config = conf.marks

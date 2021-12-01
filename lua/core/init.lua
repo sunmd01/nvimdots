@@ -164,6 +164,7 @@ local load_core = function()
     pack.load_compile()
 
     vim.cmd [[colorscheme edge]]
+    vim.cmd [[set background=dark]]
 end
 
 load_core()
