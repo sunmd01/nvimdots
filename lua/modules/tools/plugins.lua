@@ -23,7 +23,7 @@ tools["https://github.com.cnpmjs.org/nvim-telescope/telescope-project.nvim"] = {
 tools["https://github.com.cnpmjs.org/nvim-telescope/telescope-frecency.nvim"] = {
     opt = true,
     after = "telescope.nvim",
-    requires = {{"tami5/sqlite.lua", opt = true}}
+    requires = {{"https://github.com.cnpmjs.org/tami5/sqlite.lua", opt = true}}
 }
 tools["https://github.com.cnpmjs.org/nvim-telescope/telescope-media-files.nvim"] = {
     opt = true,

@@ -39,7 +39,7 @@ completion["https://github.com.cnpmjs.org/hrsh7th/nvim-cmp"] = {
 completion["https://github.com.cnpmjs.org/L3MON4D3/LuaSnip"] = {
     after = "nvim-cmp",
     config = conf.luasnip,
-    requires = "rafamadriz/friendly-snippets"
+    requires = "https://github.com.cnpmjs.org/rafamadriz/friendly-snippets"
 }
 completion["https://github.com.cnpmjs.org/windwp/nvim-autopairs"] = {
     after = "nvim-cmp",
