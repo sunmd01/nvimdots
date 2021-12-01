@@ -12,7 +12,7 @@ editor["https://github.com.cnpmjs.org/terrortylor/nvim-comment"] = {
     config = function()
         require("nvim_comment").setup({
             hook = function()
-                require("ts_context_commentstring.internal").update_commentstring()
+                require("https://github.com.cnpmjs.org/ts_context_commentstring.internal").update_commentstring()
             end
         })
     end
@@ -113,8 +113,8 @@ editor["https://github.com.cnpmjs.org/rcarriga/nvim-dap-ui"] = {
     opt = false,
     config = conf.dapui,
     requires = {
-        {"mfussenegger/nvim-dap", config = conf.dap}, {
-            "Pocco81/DAPInstall.nvim",
+        {"https://github.com.cnpmjs.org/mfussenegger/nvim-dap", config = conf.dap}, {
+            "https://github.com.cnpmjs.org/Pocco81/DAPInstall.nvim",
             opt = true,
             cmd = {"DIInstall", "DIUninstall", "DIList"},
             config = conf.dapinstall

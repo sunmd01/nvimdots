@@ -7,8 +7,8 @@ tools["https://github.com.cnpmjs.org/nvim-telescope/telescope.nvim"] = {
     cmd = "Telescope",
     config = conf.telescope,
     requires = {
-        {"nvim-lua/plenary.nvim", opt = false},
-        {"nvim-lua/popup.nvim", opt = true}
+        {"https://github.com.cnpmjs.org/nvim-lua/plenary.nvim", opt = false},
+        {"https://github.com.cnpmjs.org/nvim-lua/popup.nvim", opt = true}
     }
 }
 tools["https://github.com.cnpmjs.org/nvim-telescope/telescope-fzf-native.nvim"] = {
@@ -50,7 +50,7 @@ tools["https://github.com.cnpmjs.org/dstein64/vim-startuptime"] = {opt = true, c
 tools["https://github.com.cnpmjs.org/gelguy/wilder.nvim"] = {
     event = "CmdlineEnter",
     config = conf.wilder,
-    requires = {{"romgrk/fzy-lua-native", after = "wilder.nvim"}}
+    requires = {{"https://github.com.cnpmjs.org/romgrk/fzy-lua-native", after = "wilder.nvim"}}
 }
 tools["https://github.com.cnpmjs.org/nathom/filetype.nvim"] = {opt = false}
 return tools

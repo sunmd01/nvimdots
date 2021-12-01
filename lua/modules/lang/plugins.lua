@@ -12,7 +12,7 @@ lang["https://github.com.cnpmjs.org/simrat39/rust-tools.nvim"] = {
     opt = true,
     ft = "rust",
     config = conf.rust_tools,
-    requires = {{"nvim-lua/plenary.nvim", opt = false}}
+    requires = {{"https://github.com.cnpmjs.org/nvim-lua/plenary.nvim", opt = false}}
 }
 lang["https://github.com.cnpmjs.org/kristijanhusak/orgmode.nvim"] = {
     opt = true,

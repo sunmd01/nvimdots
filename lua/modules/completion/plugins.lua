@@ -21,13 +21,13 @@ completion["https://github.com.cnpmjs.org/hrsh7th/nvim-cmp"] = {
     config = conf.cmp,
     event = "InsertEnter",
     requires = {
-        {"saadparwaiz1/cmp_luasnip", after = "LuaSnip"},
-        {"hrsh7th/cmp-nvim-lsp", after = "cmp_luasnip"},
-        {"hrsh7th/cmp-nvim-lua", after = "cmp-nvim-lsp"},
-        {"andersevenrud/compe-tmux", branch = "cmp", after = "cmp-nvim-lua"},
-        {"hrsh7th/cmp-path", after = "compe-tmux"},
-        {"f3fora/cmp-spell", after = "cmp-path"},
-        {"lukas-reineke/cmp-rg", after = "cmp-spell"}
+        {"https://github.com.cnpmjs.org/saadparwaiz1/cmp_luasnip", after = "LuaSnip"},
+        {"https://github.com.cnpmjs.org/hrsh7th/cmp-nvim-lsp", after = "cmp_luasnip"},
+        {"https://github.com.cnpmjs.org/hrsh7th/cmp-nvim-lua", after = "cmp-nvim-lsp"},
+        {"https://github.com.cnpmjs.org/andersevenrud/compe-tmux", branch = "cmp", after = "cmp-nvim-lua"},
+        {"https://github.com.cnpmjs.org/hrsh7th/cmp-path", after = "compe-tmux"},
+        {"https://github.com.cnpmjs.org/f3fora/cmp-spell", after = "cmp-path"},
+        {"https://github.com.cnpmjs.org/lukas-reineke/cmp-rg", after = "cmp-spell"}
         -- {
         --     'tzachar/cmp-tabnine',
         --     run = './install.sh',
